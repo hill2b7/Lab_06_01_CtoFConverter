@@ -5,21 +5,21 @@ public class Main
 {
     public static void main(String[] args)
     {
-        double tempInFahrenheit = 0;
-        double tempInCelsius = 0;
-        double CELSIUS_BOILING_TEMP = 100;
-        double CELSIUS_FREEZING_TEMP = 0;
-        String trash = "";
+        double tempInFahrenheit = 0; //variable declaration
+        double tempInCelsius = 0; //variable declaration
+        double CELSIUS_BOILING_TEMP = 100; //constant declaration
+        double CELSIUS_FREEZING_TEMP = 0; //constant declaration
+        String trash = ""; //variable declaration
 
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in); //import of scanner
 
-        System.out.println("Enter Celsius temperature: ");
+        System.out.println("Enter Celsius temperature: "); //output to ask user for input
 
-        if (in.hasNextDouble())
+        if (in.hasNextDouble())  //input from user
         {
-            tempInCelsius = in.nextDouble();
-            tempInFahrenheit = 1.8 * tempInCelsius + 32;
-            System.out.println("Your temperature in Fahrenheit is " + tempInFahrenheit);
+            tempInCelsius = in.nextDouble(); //assigning the input to variable
+            tempInFahrenheit = 1.8 * tempInCelsius + 32; //formula for converting celsius to fahrenheit
+            System.out.println("Your temperature in Fahrenheit is " + tempInFahrenheit); //output's the converted temperature
 
             if (tempInCelsius <= CELSIUS_FREEZING_TEMP)
             {
