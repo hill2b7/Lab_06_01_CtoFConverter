@@ -21,11 +21,11 @@ public class Main
             tempInFahrenheit = 1.8 * tempInCelsius + 32; //formula for converting celsius to fahrenheit
             System.out.println("Your temperature in Fahrenheit is " + tempInFahrenheit); //output's the converted temperature
 
-            if (tempInCelsius <= CELSIUS_FREEZING_TEMP)
+            if (tempInCelsius <= CELSIUS_FREEZING_TEMP) // condition to determine if temperature is cold enough to freeze
             {
                 System.out.println("The temperature is cold enough to freeze.");
             }
-            if (tempInCelsius >= CELSIUS_BOILING_TEMP)
+            if (tempInCelsius >= CELSIUS_BOILING_TEMP) // condition to determine if temperature is hot enough to boil
             {
                 System.out.println("The temperature is hot enough to boil.");
             }
