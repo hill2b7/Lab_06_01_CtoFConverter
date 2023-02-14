@@ -15,7 +15,7 @@ public class Main
 
         System.out.println("Enter Celsius temperature: "); //output to ask user for input
 
-        if (in.hasNextDouble())  //input from user
+        if (in.hasNextDouble())  // tests input from user make sure it is a double
         {
             tempInCelsius = in.nextDouble(); //assigning the input to variable
             tempInFahrenheit = 1.8 * tempInCelsius + 32; //formula for converting celsius to fahrenheit
