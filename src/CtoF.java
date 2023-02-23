@@ -21,7 +21,6 @@ public class CtoF {
                     System.out.println("Enter the temperature in Celsius to convert to Fahrenheit"); //output asking for a temp input
                     if (in.hasNextDouble()) // if statement that will run code block below if the condition is met
                     {
-                        done = false; // resets the sentinel value from previous looping session
                         tempInCelsius = in.nextDouble(); // sets input received to the tempInCelsius variable
                         tempInFahrenheit = 1.8 * tempInCelsius + 32; // formula for conversion
                         System.out.println("Your temperature in fahrenheit is " + tempInFahrenheit); //output that shows what your converted temperature is
@@ -45,7 +44,6 @@ public class CtoF {
                 }
                 while (!done); // Loop will run while the received input is not done or true
 
-                QuitProgram = ""; //sets QuitProgram to an empty string so nothing is stored from previous loop
                 System.out.println("Do you want to enter another temperature Y/N :"); //output asking user if they want to play again
                 in.nextLine(); // input box for user
                 QuitProgram = in.nextLine(); //setting ContinueGame string to whatever input is received by the end user
